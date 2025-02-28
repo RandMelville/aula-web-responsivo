@@ -1,0 +1,219 @@
+* Reseta alguns estilos padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;  /* Fundo mais suave */
+    color: #333;  /* Cor de texto mais suave */
+    line-height: 1.6;
+    padding: 20px;
+    margin: 0;
+    background-image: linear-gradient(to right, #f4f7fc, #e2e8f0);  /* Gradiente sutil no fundo */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+}
+
+header h1 {
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+.menu-label {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Esconde o menu inicialmente em telas pequenas */
+.menu-toggle {
+    display: none;
+}
+
+nav {
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f4f7fc;
+    border-bottom: 2px solid #f4f7fc;  /* Linha embaixo do link ao passar o mouse */
+}
+
+/* Estilos para o menu hambúrguer */
+@media (max-width: 768px) {
+    .menu-label {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        padding: 10px 0;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave para o menu */
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    /* Exibe o menu quando o checkbox for marcado */
+    .menu-toggle:checked + nav {
+        display: block;
+    }
+}
+
+/* Estilo para o conteúdo principal */
+main {
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Sombra suave no artigo */
+}
+
+main article h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+main article p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+main article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave nas imagens */
+}
+
+/* Estilo para o formulário */
+.form {
+    margin: 30px 0;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form div {
+    margin-bottom: 20px;
+}
+
+.form input, .form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+.form input:focus, .form textarea:focus {
+    border-color: #4f8fd1;  /* Cor azul suave quando em foco */
+    outline: none;
+}
+
+.form .button {
+    text-align: center;
+}
+
+.form button {
+    padding: 12px 30px;
+    font-size: 16px;
+    background-color: #4f8fd1;  /* Cor de fundo suave */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+    background-color: #3d76a5;  /* Cor mais escura ao passar o mouse */
+}
+
+.form button:active {
+    background-color: #346687;
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Adiciona um pouco de responsividade ao conteúdo */
+@media (max-width: 480px) {
+    main {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
