@@ -1,0 +1,204 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo fontes padrão */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo para o header */
+header {
+    background-color: #8b15be;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Menu toggle para telas pequenas */
+.menu-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.menu {
+    display: none;  /* O menu é escondido por padrão */
+    text-align: center;
+    color: darkorchid;
+}
+
+.menu.show {
+    display: block;  /* O menu é mostrado quando a classe "show" é adicionada */
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para o banner */
+.banner {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo para o formulário */
+.formulario {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 30px auto;
+}
+
+.formulario h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.formulario button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff9a0e;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #f5b459;
+}
+
+/* Estilo para o footer */
+footer {
+    background-color: #8b15be;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsividade */
+
+/* Tela de celular (menor que 768px) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .formulario {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu.show {
+        display: block;
+    }
+
+    .menu ul {
+        padding: 10px 0;
+    }
+
+    .menu ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .banner img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Tela de notebook (768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .formulario {
+        width: 60%;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+/* Tela de monitor (1024px ou mais) */
+@media (min-width: 1024px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .formulario {
+        width: 50%;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
