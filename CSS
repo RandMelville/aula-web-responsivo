@@ -1,0 +1,169 @@
+css
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9; /* Cor de fundo suave para criar uma sensação acolhedora */
+}
+
+/* Container principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D32F2F; /* Vermelho para atrair atenção e estimular o apetite */
+    padding: 20px;
+}
+
+header .logo h1 {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seção do Menu */
+#menu {
+    text-align: center;
+    margin: 50px 0;
+}
+
+#menu h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #D32F2F; /* Título em vermelho para continuar a consistência do tema */
+}
+
+.pizza-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pizza-item {
+    margin: 10px;
+    text-align: center;
+    background-color: #fff; /* Fundo branco para destacar as pizzas */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para criar profundidade */
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de hover */
+}
+
+.pizza-item:hover {
+    transform: scale(1.05); /* Aumenta o tamanho da pizza ao passar o mouse */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Efeito de destaque */
+}
+
+.pizza-item h3 {
+    margin-top: 10px;
+    color: #388E3C; /* Verde para transmitir frescor e qualidade nos ingredientes */
+}
+
+.pizza-item p {
+    color: #616161; /* Cor mais neutra para o texto, fácil de ler */
+}
+
+/* Seção Sobre */
+#sobre {
+    background-color: #F0F4C3; /* Amarelo claro para uma sensação de acolhimento e energia positiva */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#sobre h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #D32F2F; /* Consistência no uso do vermelho para os títulos */
+}
+
+/* Formulário de Contato */
+#contato {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #FFF9C4; /* Amarelo suave para uma sensação de acolhimento e otimismo */
+}
+
+#contato h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #D32F2F; /* Vermelho para chamar atenção */
+}
+
+#form-contato {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#form-contato label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #388E3C; /* Verde para os labels, criando uma conexão com frescor */
+}
+
+#form-contato input, #form-contato textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#form-contato button {
+    padding: 10px;
+    background-color: #FF6347; /* Vermelho laranja para criar uma chamada à ação chamativa */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+#form-contato button:hover {
+    background-color: #FF4500; /* Tons mais intensos de laranja para o efeito de hover */
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
