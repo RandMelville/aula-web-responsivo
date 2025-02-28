@@ -1,0 +1,186 @@
+/* Estilo para o body */
+body {
+    background-color: #EEE; /* Cor de fundo */
+    color: #212121; /* Cor do texto */
+    font-family: 'Arial', sans-serif; /* Fonte moderna e legível */
+    font-size: 16px; /* Tamanho padrão de fonte */
+    line-height: 1.5; /* Maior espaçamento entre linhas para facilitar a leitura */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o header (cabeçalho) */
+.header-section {
+    background-color: #212121; /* Cor de fundo azul */
+    color: #FFF; /* Texto branco */
+    padding: 20px 0; /* Espaçamento interno */
+    text-align: center; /* Centraliza o título */
+}
+
+.header-section h1 {
+    font-size: 2.5em; /* Tamanho maior para o título */
+    margin: 0;
+    font-family: 'Trebuchet MS';
+    color: #4A90E2
+}
+
+.header-section h6 {
+    font-size: 1.2em; /* Tamanho maior para o título */
+    margin: 0;
+    font-family: 'Garamond';
+}
+
+/* Estilo para a seção principal */
+.main-section {
+    flex-direction: column; /* Alinha os elementos na vertical */
+    justify-content: center; /* Centraliza o conteúdo */
+    align-items: center; /* Alinha horizontalmente os elementos */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.main-section p {
+    font-size: 1.25em;
+    margin-bottom: 20px; /* Espaço entre o texto e a imagem */
+    font-family: 'Trebuchet MS';
+    color: #212121
+}
+
+/* Estilo para a imagem */
+.main-section img {
+    max-width: 70%;
+    height: auto;
+    margin-bottom: 30px;
+    border-radius: 0.5%;
+}
+
+/* Estilo para o formulário de contato */
+.contact-form {
+    background-color: #FFF; /* Fundo branco para o formulário */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombras suaves para o formulário */
+    width: 100%;
+    max-width: 600px; /* Limita a largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário */
+    font-family: 'Trebuchet MS';
+}
+
+.contact-form .title-form {
+    font-size: 1.75em; /* Tamanho de fonte maior para o título do formulário */
+    margin-bottom: 20px; /* Espaço entre o título e os campos */
+    color: #1F4E79
+}
+
+.contact-form label {
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 8px; /* Espaço entre o label e o input */
+    text-align: left;
+    color: #1F4E79
+}
+
+.contact-form input {
+    width: 100%; /* Campo de texto ocupa toda a largura */
+    padding: 1%; /* Espaçamento interno nos inputs */
+    margin-bottom: 15px; /* Espaço entre os inputs */
+    border: 1px solid #CCC; /* Borda cinza clara */
+    border-radius: 4px; /* Bordas arredondadas */
+    font-size: 1rem;
+    color: #212121
+}
+
+.contact-form button {
+    background-color: #1F4E79; /* Cor azul */
+    color: #FFF; /* Texto branco */
+    font-size: 1.125rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #4A90E2; /* Azul mais claro no hover */
+}
+
+/* Estilo para o footer (rodapé) */
+.footer-section {
+    background-color: #212121; /* Cor de fundo escura */
+    color: #FFF; /* Texto branco */
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.875rem; /* Tamanho de fonte menor */
+    font-family: 'Trebuchet MS';
+}
+
+.footer-section p {
+    margin: 0;
+}
+
+/* Media Queries para diferentes tamanhos de tela */
+
+/* Para telas pequenas (como smartphones) */
+@media (max-width: 600px) {
+    .header-section h1 {
+        font-size: 1.8em; /* Tamanho menor do título */
+    }
+
+    .main-section p {
+        font-size: 1.125em; /* Texto um pouco menor */
+    }
+
+    .contact-form {
+        width: 90%; /* O formulário ocupa 90% da largura da tela */
+        padding: 15px; /* Reduz o padding no formulário */
+    }
+
+    .contact-form input {
+        width: 90%;
+        padding: 10px; /* Reduz o padding nos inputs */
+    }
+
+    .contact-form button {
+        width: 100%; /* O botão ocupa toda a largura */
+        padding: 15px; /* Aumenta o tamanho do botão */
+    }
+}
+
+/* Para telas médias (como tablets) */
+@media (max-width: 1024px) {
+    .main-section {
+        flex-direction: row; /* Layout em linha para dispositivos médios */
+        justify-content: space-between; /* Espaço entre os elementos */
+        align-items: flex-start; /* Alinha os elementos no topo */
+    }
+
+    .main-section p {
+        font-size: 1.2em; /* Ajusta o tamanho da fonte */
+    }
+
+    .contact-form {
+        width: 45%; /* O formulário ocupa 45% da largura da tela */
+    }
+
+    .contact-form input {
+        padding: 10px; /* Reduz o padding nos inputs */
+    }
+}
+
+/* Para telas grandes (como desktops) */
+@media (min-width: 1025px) {
+    .main-section {
+        flex-direction: row; /* Mantém o layout em linha */
+        justify-content: space-around; /* Espaçamento igual entre os elementos */
+        align-items: center; /* Centraliza os itens verticalmente */
+    }
+
+    .contact-form {
+        width: 35%; /* O formulário ocupa 35% da largura da tela */
+    }
+
+    .contact-form button {
+        font-size: 1.25rem; /* Tamanho maior do botão */
+    }
+}
