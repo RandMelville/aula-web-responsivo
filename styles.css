@@ -1,0 +1,129 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.body {
+    background-color: #fefaf0;
+    color: #333;
+}
+
+.container {
+    display: grid;
+    justify-items: center;
+    background-color: #fdf3d0;
+    padding: 40px 20px;
+    border-radius: 10px;
+    gap: 24px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.menu {
+    background-color: #f8b400;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu img {
+    max-height: 80px;
+}
+
+.menu-opcoes {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-opcoes a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu-opcoes a:hover {
+    color: #333;
+}
+
+.menu-hamburger {
+    display: none;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #d87f0a;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    color: #444;
+}
+
+#galeria img {
+    max-width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+#galeria img:hover {
+    transform: scale(1.05);
+}
+
+form {
+    gap: 15px;
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+button {
+    background-color: #f8b400;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #d87f0a;
+}
+
+.rodape {
+    background-color: #f8b400;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+@media screen and (max-width: 1023px) {
+    .menu-hamburger {
+        display: block;
+    }
+    .menu-opcoes {
+        display: none;
+    }
+}
